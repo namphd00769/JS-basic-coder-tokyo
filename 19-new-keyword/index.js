@@ -66,9 +66,13 @@ console.log(nga.name() + " is crush belong to " + me.name());
 console.log(nga.name() + " " + me.name()) + "From to " + name.country;
 
 /**
- * git checkout --filename (xoa 1 thay doi maf chua cho vao git add)
+ * git checkout --filename (Xóa  thay đổi mà chưa cho vào git add )
  */
 
 /**
- * git reset
+ * git reset  là:  loại bỏ  thay đổi mà khi đã git add rồi mà chưa cho vào git commit -m
+ */
+
+/**
+ *  git diff chỉ được sử dụng khi người dùng chưa gõ lệnh git add 
  */
