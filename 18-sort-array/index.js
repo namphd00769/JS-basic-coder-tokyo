@@ -47,6 +47,7 @@ var products = [
 	{name: 'Nokia', price: 60, stock: 4},
 	{name: 'Iphone', price: 100, stock: 2},
 	{name: 'Samsung', price: 90, stock: 3}	
+	{name: 'Samsung', price: 120, stock: 8}
 ]
 
 var sortByPrice = products.sort(function(a, b){
