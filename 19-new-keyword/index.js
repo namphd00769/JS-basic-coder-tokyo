@@ -26,7 +26,7 @@ var tom = {
 
 var m1 = new Mouse('m1', 0.1 , 'blue')
 var m2 = new Mouse('m2', 0.5 , 'green')
-var m3 = new Mouse('m3', 0.3 , 'black')
 
-tom.eat(m1).eat(m2).eat(m3);
+
+tom.eat(m1).eat(m2);
 console.log(tom);
