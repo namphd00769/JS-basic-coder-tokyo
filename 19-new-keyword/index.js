@@ -30,3 +30,35 @@ var m2 = new Mouse('m2', 0.5 , 'green')
 
 tom.eat(m1).eat(m2);
 console.log(tom);
+
+console.log('-------------------------------------------------------------------------------------')
+// Prototypes in JavaScript')
+
+function Person(firstname, lastname, age, weight){
+	this.firstname = firstname;
+	this.lastname = lastname;
+	this.age = age;
+	this.weight = weight;
+	this.country = 'Viet Nam'
+}
+
+console.log(Person.prototype.constructor === Person);
+/**
+ * Prototype là 1 object được chia sẻ chung cho tất cả các Object được tạo bởi New Keyword
+ * ---> tất cả các object được tạo bởi New KeyWord đều có thê truy cập được vào 1 Prototype nào đó
+ * 
+ */
+
+Person.prototype.sleep = function(){ //=> Prototype cua Person function contructor
+	console.log(this.firstname + this.lastname + " is Sleeping..........zzz")
+}
+ var me = new Person('Phan', 'Nam', 22, 65);
+ console.log(me.sleep());
+
+ var nga = new Person('Phuong', 'Nga', 22, 55);
+ console.log(nga.sleep());
+
+ Person.prototype.name = function(){ // => Prototype cua Person function contructor
+ 	return this.firstname + " " +this.lastname
+ }
+console.log(nga.name() + " is crush belong to " + me.name());
