@@ -66,7 +66,7 @@ console.log(nga.name() + " is crush belong to " + me.name());
 console.log(nga.name() + " " + me.name()) + "From to " + name.country;
 
 /**
- * git checkout --filename (Xóa  thay đổi mà chưa cho vào git add )
+ * git checkout --filename (Xóa  thay đổi hiện tại <nếu muốn lấy lại có thể ctr + z> mà chưa cho vào git add )
  */
 
 /**
